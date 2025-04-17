@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeowMate - Cat Landing Page</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" /> <!--boostrap-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" /> <!--font-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" /> <!--icon-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#beranda">Beranda</a>
+        <a href="#alasan">Alasan</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#tips">Tips</a>
+      </div>
+      <h4 class="fw-bold mx-auto mx-lg-0">MeowMate</h4>
+      <div class="mt-3 mt-lg-0">
+        <button class="btn btn-cat">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="centered-section container">
+    <div class="col-lg-6">
+      <h1 class="fw-bold mb-3">Temukan Sahabat Berbulu yang Bikin Harimu Makin Seru!</h1>
+      <p>Kucing-kucing lucu dan manis sedang menunggu rumah barunya. Adopsi sekarang dan bawa pulang teman seumur hidup.</p>
+      <button class="btn btn-cat mt-3" onclick="scrollToAdopsi()">Lihat Kucing yang Tersedia</button>
+    </div>
+    <div class="carousel-container">
+      <button class="nav left">&#10094;</button>
+      <div class="carousel">
+        <div class="card blue">
+          <img src="https://i.pinimg.com/474x/b0/41/82/b041828492ba1814082176c633db9f76.jpg" alt="Tiramisu" />
+          <h6><strong>Tiramisu</strong></h6>
+          <p>Male, 2 Yrs</p>
+          <span class="heart">&#10084;</span>
+        </div>
+  
+        <div class="card green">
+          <img src="https://i.pinimg.com/474x/1d/c6/f3/1dc6f3afc45e956cb2e0773b4e1cf15e.jpg" alt="Lucy" />
+          <h6><strong>Lucy</strong></h6>
+          <p>Female, Adult</p>
+          <span class="heart">&#10084;</span>
+        </div>
+  
+        <div class="card yellow">
+          <img src="https://i.pinimg.com/474x/e7/04/bb/e704bb99c1258c4dfa5764b0a5ac1d7d.jpg" alt="Another Dog" />
+          <p><strong>Moo</strong></p>
+          <p>Male, 1 Yr</p>
+          <span class="heart">&#10084;</span>
+        </div>
+
+        <div class="card orange">
+          <img src="https://i.pinimg.com/474x/ca/f5/46/caf5465be97af6d76dda128e0b899124.jpg" alt="Another Dog" />
+          <p><strong>black</strong></p>
+          <p>Male, Kitten</p>
+          <span class="heart">&#10084;</span>
+        </div>
+
+        <div class="card purple">
+          <img src="https://i.pinimg.com/736x/09/37/93/09379343761d03af711d8d7f9f8db539.jpg" alt="Another Dog" />
+          <p><strong>boola</strong></p>
+          <p>Female, 5 Yr</p>
+          <span class="heart">&#10084;</span>
+        </div>
+
+      </div>
+      <button class="nav right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Alasan Section -->
+  <section id="alasan" class="section-dark centered-section">
+    <div class="container">
+      <h2 class="fw-bold text-center">Kami Siap Mengadopsi</h2>
+      <p class="mb-4 text-center">Adopsi menyelamatkan nyawa dan memberi harapan baru bagi kucing-kucing terlantar.</p>
+      <div class="d-flex justify-content-center gap-4 flex-wrap fs-4">
+        <div class="text-center">
+          <i class="bi bi-shield-plus"></i>
+          <div class="small">Sudah Vaksin</div>
+        </div>
+        <div class="text-center">
+          <i class="bi bi-gender-ambiguous"></i>
+          <div class="small">Sudah Steril</div>
+        </div>
+        <div class="text-center">
+          <i class="bi bi-house-check"></i>
+          <div class="small">Home-Check</div>
+        </div>
+        <div class="text-center">
+          <i class="bi bi-file-earmark-text"></i>
+          <div class="small">Surat Adopsi</div>
+        </div>
+        <div class="text-center">
+          <i class="bi bi-heart-fill text-danger"></i>
+          <div class="small">Siap Dicintai</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--video-->
+<section id="adopsi-video" class="adopsi-video-section centered-section">
+  <div class="container">
+    <!-- Container Flex untuk Video dan Teks -->
+    <div class="video-text-container d-flex">
+      <!-- Penjelasan Video -->
+      <div class="video-description">
+        <h2 class="text-center mb-5"><strong>Kenapa Harus Mengadopsi, Bukan Membeli?</strong></h2>
+        <p>Adopsi adalah langkah penuh kasih yang bisa menyelamatkan kehidupan hewan-hewan terlantar dan memberi mereka rumah yang penuh cinta. Dengan mengadopsi, kamu tidak hanya memberikan kesempatan kedua untuk hewan, tetapi juga berkontribusi dalam mengurangi populasi hewan jalanan. Tonton video ini untuk mengetahui lebih lanjut mengapa adopsi adalah pilihan yang bijak dan mengapa kamu sebaiknya memilihnya daripada membeli hewan peliharaan.</p>
+      </div>
+
+      <!-- Video Embed YouTube -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Ib6M4R85zuU?si=lhohz3kr3AnGFZmL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kesehatan Kucing -->
+<section class="container">
+  <div class="row align-items-center">
+    <div class="col-md-6 text-center">
+      <img src="https://i.pinimg.com/736x/e5/db/d7/e5dbd7f18838aaccccc428a19170c622.jpg" class="img-fluid" alt="kesehatan kucing" />
+    </div>
+    <div class="col-md-6">
+      <h4 class="fw-semibold">Kucing Sudah Dicek Kesehatan</h4>
+      <p>Setiap kucing telah diperiksa dokter hewan, divaksin, dan disteril.</p>
+      <button class="btn btn-cat mt-3">Pelajari Lebih Lanjut</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Testimoni -->
+<section id="testimoni" class="container">
+  <h2 class="text-center mb-5">Apa Kata Mereka?</h2>
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="testimonial text-center mx-auto" style="max-width: 700px;">
+          <p>"MeowMate bikin hidup aku lebih mudah. Nggak pernah lagi lupa vaksin si Oyen!"</p>
+          <strong>- Dinda, Cat Mom</strong>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="testimonial text-center mx-auto" style="max-width: 700px;">
+          <p>"Platform ini keren banget! Aku nemu kucing lucu yang sekarang jadi sahabat terbaikku."</p>
+          <strong>- Raka, Pecinta Kucing</strong>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="testimonial text-center mx-auto" style="max-width: 700px;">
+          <p>"Sistem adopsinya gampang dan cepat. Aku langsung jatuh cinta sama kucing yang sekarang jadi keluarga."</p>
+          <strong>- Maya, Cat Lover</strong>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="testimonial text-center mx-auto" style="max-width: 700px;">
+          <p>"Fitur reminder MeowMate sangat membantu. Semua jadwal vaksin dan grooming tercatat rapi!"</p>
+          <strong>- Aldi, Pecinta Hewan</strong>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="testimonial text-center mx-auto" style="max-width: 700px;">
+          <p>"Rekomendasi kucing yang diberikan pas banget dengan yang aku cari. Thank you MeowMate!"</p>
+          <strong>- Siska, Cat Enthusiast</strong>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigasi Panah -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- Section Tips -->
+<section id="tips" class="tips-section centered-section">
+  <div class="container">
+    <h2 class="text-center mb-5"><strong>Tips For You</strong></h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/73/0b/d2/730bd21dfb9ec1d740448992b2b6f233.jpg" alt="Tips 1" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Hal yang Perlu Diketahui Tentang Dokumen Adopsi Hewan</h3>
+          <p class="tip-description">Sedang menyelesaikan adopsi hewan baru? Pelajari semua dokumen penting yang harus kamu siapkan.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/e1/60/6a/e1606a131592f7c55b351a6d099c42ed.jpg" alt="Tips 2" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Berapa Biaya Adopsi Hewan? Ini Rinciannya</h3>
+          <p class="tip-description">Ketahui berapa biaya yang perlu disiapkan saat mengadopsi hewan peliharaan baru.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/40/f3/68/40f368e224fbd3c6a1fe13b982356904.jpg" alt="Tips 3" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Membawa Pulang Kucing Rescue: Panduan Awal</h3>
+          <p class="tip-description">Panduan lengkap hari-hari pertama agar kamu dan kucing barumu saling nyaman.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/8b/bb/b5/8bbbb5d6b5c7107df0f437c72b5a5f66.jpg" alt="Tips 4" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Apakah Saya Siap Memiliki Kucing?</h3>
+          <p class="tip-description">Hal-hal yang perlu dipertimbangkan sebelum memutuskan mengadopsi kucing.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/2b/94/07/2b940724ccea513d97a429202cd2576c.jpg" alt="Tips 5" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Menyiapkan Rumah untuk Hewan Peliharaan Baru</h3>
+          <p class="tip-description">Pelajari cara membuat rumahmu aman dan nyaman untuk hewan adopsimu.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/b8/ec/b3/b8ecb3c1e023c577f4f0dd5d7b376a02.jpg" alt="Tips 6" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Membangun Kepercayaan dengan Hewan Rescue</h3>
+          <p class="tip-description">Tips membangun ikatan dan kepercayaan dengan hewan adopsi baru kamu.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/18/4d/05/184d054b5714ec5ee3f710263336d9af.jpg" alt="Tips 7" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Cara Mengenalkan Hewan Baru ke Hewan Lama</h3>
+          <p class="tip-description">Tips penting agar proses perkenalan hewan peliharaan berjalan lancar dan minim konflik.</p>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <img src="https://i.pinimg.com/474x/af/8b/98/af8b98b28bf19245ed79ce71c34bc7ab.jpg" alt="Tips 8" class="tip-image">
+        <div class="tip-content">
+          <small class="tip-category">Tips Adopsi</small>
+          <h3 class="tip-title">Checklist Sebelum Mengadopsi Hewan</h3>
+          <p class="tip-description">Daftar persiapan yang wajib dilakukan sebelum membawa hewan adopsi ke rumah.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tips-button-container">
+    <button class="btn btn-cat mt-3">Lihat Lebih Banyak Artikel</button>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer py-5 mt-5 bg-dark text-light" id="tentang">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h4 class="fw-bold">MeowMate</h4>
+          <p class="text-secondary">Platform adopsi kucing terpercaya yang menghubungkan kamu dengan sahabat berbulu yang butuh rumah hangat.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h6 class="fw-semibold">Navigasi</h6>
+          <ul class="list-unstyled mt-2">
+            <li><a href="#beranda" class="text-secondary text-decoration-none">Beranda</a></li>
+            <li><a href="#alasan" class="text-secondary text-decoration-none">Alasan Adopsi</a></li>
+            <li><a href="#testimoni" class="text-secondary text-decoration-none">Testimoni</a></li>
+            <li><a href="#tips" class="text-secondary text-decoration-none">Artikel</a></li>
+            <li><a href="#tentang" class="text-secondary text-decoration-none">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="fw-semibold">Hubungi Kami</h6>
+          <p class="text-secondary mb-2">Email: support@meowmate.com</p>
+          <p class="text-secondary mb-3">Telepon: +62 812 3456 7890</p>
+          <div class="social-icons">
+            <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 border-secondary" />
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="mb-2 mb-md-0 text-secondary">&copy; 2025 MeowMate</p>
+        <div class="mb-2 mb-md-0">
+          <a href="#" class="text-secondary text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-secondary text-decoration-none">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap & Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
