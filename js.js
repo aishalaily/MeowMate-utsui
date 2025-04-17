@@ -8,6 +8,20 @@ function scrollToAdopsi() {
   }
 }
 
+const carousel = document.querySelector('.carousel');
+const leftButton = document.querySelector('.nav.left');
+const rightButton = document.querySelector('.nav.right');
+
+let scrollAmount = 0;
+
+rightButton.addEventListener('click', () => {
+  carousel.scrollBy({ left: 300, behavior: 'smooth' });
+});
+
+leftButton.addEventListener('click', () => {
+  carousel.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
 // Aktifkan Bootstrap Carousel untuk Testimoni
 const testimonialCarousel = document.getElementById('testimonialCarousel');
 const bsCarousel = new bootstrap.Carousel(testimonialCarousel, {
