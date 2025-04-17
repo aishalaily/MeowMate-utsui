@@ -9,17 +9,25 @@ function scrollToAdopsi() {
 }
 
 const carousel = document.querySelector('.carousel');
-const leftButton = document.querySelector('.nav.left');
-const rightButton = document.querySelector('.nav.right');
+const cards = document.querySelectorAll('.card');
+let index = 0;
 
-let scrollAmount = 0;
-
-rightButton.addEventListener('click', () => {
-  carousel.scrollBy({ left: 300, behavior: 'smooth' });
+document.querySelector('.nav.left').addEventListener('click', () => {
+  if (index > 0) {
+    index--;
+  } else {
+    index = cards.length - 1; // Go to the last card
+  }
+  carousel.style.transform = `translateX(-${index * 320}px)`;
 });
 
-leftButton.addEventListener('click', () => {
-  carousel.scrollBy({ left: -300, behavior: 'smooth' });
+document.querySelector('.nav.right').addEventListener('click', () => {
+  if (index < cards.length - 1) {
+    index++;
+  } else {
+    index = 0; // Go to the first card
+  }
+  carousel.style.transform = `translateX(-${index * 320}px)`;
 });
 
 // Aktifkan Bootstrap Carousel untuk Testimoni
